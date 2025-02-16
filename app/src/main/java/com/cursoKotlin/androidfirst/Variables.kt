@@ -1,11 +1,17 @@
 package com.cursoKotlin.androidfirst
 
 fun main(){
-    //No hay necesidad de hacer el tipo de variable explícito
+    //No hay necesidad de hacer el tipo de variable explícito, aveces puede ser redundante
+    //Se puede guardar como var o como val
+        //Var :Se puede modificar
+        //Val:Es inmutable
     val numero1 =42
-    val numero: Int = 42
+    var numero: Int = 42
     println("Numero no explicito:  $numero1" )
-    println("Numero explicito:  $numero" )
+    println("Numero explicito antes del cambio:  $numero" )
+    numero = 38
+    println("Numero explicito despues del cambio:  $numero" )
+
 
     val texto: String = "Hola mundo"
     val decimal: Double = 3.14
@@ -44,6 +50,13 @@ fun main(){
         Se pueden poner varias lineas.
     """
     println(textoLargo)
+
+    //Se puede cambiar una variable a String
+    var cambio = numero.toString()
+    println("Variable numerica pasada a String: $cambio")
+    //Tambien se puede:
+    var cambio2:String = numero.toString()
+    println("Variable numerica pasada a String (explicito): $cambio2")
     println("Fin de las variables")
 
 }
