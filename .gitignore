@@ -1,0 +1,37 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de compilación generados por Android Studio
+.idea/
+
+
+# Archivos de salida de APKs y AABs
+/output/
+*.apk
+*.aab
+
+# Cachés de ejecución y pruebas locales
+.idea/gradle.xml
+.idea/sonarlint/
+
+# Archivos de debug de NDK
+*.so
+*.o
+*.d
