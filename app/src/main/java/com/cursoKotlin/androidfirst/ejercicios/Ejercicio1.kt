@@ -1,6 +1,5 @@
 package com.cursoKotlin.androidfirst.ejercicios
 
-import android.app.Notification
 
 //Link al ejercicio en:
 //https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems?hl=es-419#1
