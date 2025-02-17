@@ -13,6 +13,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+#Mis apuntes
+apuntes-curso-kotlin.docx
 
 # Archivos generados por el sistema operativo
 .DS_Store
