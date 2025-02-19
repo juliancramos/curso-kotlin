@@ -13,4 +13,9 @@ open class Animal (val nombre: String, var edad: Int) {
         println("Nombre: $nombre, Edad: $edad años")
     }
 
+    override fun toString(): String {
+        return "Animal(nombre='$nombre', edad=$edad)"
+    }
+
+
 }

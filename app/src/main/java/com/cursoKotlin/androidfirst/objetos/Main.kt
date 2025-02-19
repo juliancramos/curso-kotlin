@@ -5,6 +5,13 @@ fun main() {
     perro.mostrarInfo()
     perro.hacerSonido()
     perro.moverCola()
+    //Métodos de interfaces
+    perro.entrenar()
+    perro.jugar()
+    //Forma por defecto desde la interfaz
+    perro.bañar()
+    //toString (directamente con los atributos de perro)
+    println(perro)
 
     println()
 
@@ -12,6 +19,10 @@ fun main() {
     gato.mostrarInfo()
     gato.hacerSonido()
     gato.ronronear()
+    //Metodo de la interfaz sobrescrito
+    gato.bañar()
+    //toString (con super para llamar al toString de animal)
+    println(gato)
 
     println()
 
@@ -20,4 +31,6 @@ fun main() {
     val animal = Animal("Leonardo", 5)
     animal.hacerSonido()
     animal.mostrarInfo()
+    //toString
+    println(animal)
 }
