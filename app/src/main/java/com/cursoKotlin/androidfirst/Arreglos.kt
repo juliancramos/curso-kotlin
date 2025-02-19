@@ -41,6 +41,7 @@ fun main(){
     //FUNCIONES DE ORDEN SUPERIOR
     //Map: Transforma cada elemento del arreglo
     val duplicados = numeros.map { it * 2 }
+    println("Impresión con map:")
     println(duplicados)
 
 
