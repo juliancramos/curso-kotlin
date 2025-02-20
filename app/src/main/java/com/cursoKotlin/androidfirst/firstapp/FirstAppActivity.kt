@@ -1,6 +1,9 @@
 package com.cursoKotlin.androidfirst.firstapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +21,21 @@ class FirstAppActivity : AppCompatActivity() {
         // Inflar el layout usando View Binding
         binding = ActivityFirstAppBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.button.setOnClickListener {
+            val name = binding.name.text.toString()
+            if (name.isNotEmpty()){
+                //Para mensaje temporal en la parte de abajo
+                Toast.makeText(baseContext, "Hello: $name", Toast.LENGTH_LONG).show()
+
+                val intent = Intent(baseContext, ResultActivity::class.java)
+                intent.putExtra("name" , name)
+                startActivity(intent)
+            }else{
+                Toast.makeText(baseContext, "Escribe tu nombre", Toast.LENGTH_LONG).show()
+            }
+
+        }
 
 
 //        Para adaptar padding

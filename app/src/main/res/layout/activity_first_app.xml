@@ -8,63 +8,41 @@
     android:orientation="vertical"
     tools:context=".firstapp.FirstAppActivity">
 
-    <View
-        android:id="@+id/viewPurple"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@color/purple_700"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Escribe tu nombre"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
-    <View
-        android:id="@+id/viewBlue"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="#0734F2"
-        app:layout_constraintStart_toEndOf="@+id/viewPurple"
-        app:layout_constraintBottom_toBottomOf="@+id/viewPurple"
-Cre
-      />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-    <!--    Realizado con LinearLayout-->
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_gravity="top|left"-->
-    <!--        android:text="Hola Mundo"-->
-    <!--        android:textSize="22sp" />-->
-
-    <!--    <TextView-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_gravity="top|left"-->
-    <!--        android:text="Hola Mundo"-->
-    <!--        android:textSize="22sp" />-->
-
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:orientation="horizontal">-->
-
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_gravity="top|left"-->
-    <!--            android:text="Hola Mundo"-->
-    <!--            android:textSize="22sp" />-->
-
-    <!--        <TextView-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_gravity="top|left"-->
-    <!--            android:text="Hola Mundo"-->
-    <!--            android:textSize="22sp" />-->
-
-
-    <!--    </LinearLayout>-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
