@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.cursoKotlin.androidfirst.databinding.ActivityMenuBinding
 import com.cursoKotlin.androidfirst.firstapp.FirstAppActivity
+import com.cursoKotlin.androidfirst.imcapp.ImcAppActivity
 
 class MenuActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMenuBinding
@@ -21,10 +22,17 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonSaludoApp.setOnClickListener { navigateToSaludoApp() }
+
+        binding.buttonIMCApp.setOnClickListener { navigateToImcApp() }
     }
 
     private fun navigateToSaludoApp() {
         val intent = Intent(this, FirstAppActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToImcApp(){
+        val intent = Intent(this, ImcAppActivity::class.java)
         startActivity(intent)
     }
 }
