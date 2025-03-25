@@ -1,11 +1,8 @@
 package com.cursoKotlin.androidfirst.imcapp
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.cursoKotlin.androidfirst.R
 import com.cursoKotlin.androidfirst.databinding.ActivityImcAppBinding
 
@@ -27,6 +24,10 @@ class ImcAppActivity : AppCompatActivity() {
     private fun initListeners() {
         binding.viewMale.setOnClickListener { setGenderColor(true) }
         binding.viewFemale.setOnClickListener { setGenderColor(false) }
+        binding.rangeSliderHeight.addOnChangeListener { _, value, _ ->
+            var valueFormat = String.format("%.0f", value)
+            binding.heightText.text = "$valueFormat cm"
+        }
     }
 
     private fun setGenderColor(isMale:Boolean){
