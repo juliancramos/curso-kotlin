@@ -1,4 +1,4 @@
-package com.cursoKotlin.androidfirst
+package com.cursoKotlin.androidfirst.sintaxis
 
 fun main(){
     //    var name:String = null; //Esto no lo permite hacer ya que se indica que es de tipo String

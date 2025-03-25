@@ -1,4 +1,4 @@
-package com.cursoKotlin.androidfirst
+package com.cursoKotlin.androidfirst.sintaxis
 
 fun main(){
     //Se usa arrayOf

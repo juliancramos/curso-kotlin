@@ -1,4 +1,4 @@
-package com.cursoKotlin.androidfirst
+package com.cursoKotlin.androidfirst.sintaxis
 
 fun main(){
     //Los condicionales funcionan igual a lenguajes como C++, pero con algunas mejoras

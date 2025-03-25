@@ -1,4 +1,4 @@
-package com.cursoKotlin.androidfirst
+package com.cursoKotlin.androidfirst.sintaxis
 
 fun main(){
     //List: Inmutable por defecto (no se puede modificar después de creación)

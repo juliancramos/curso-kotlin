@@ -1,4 +1,4 @@
-package com.cursoKotlin.androidfirst
+package com.cursoKotlin.androidfirst.sintaxis
 
 fun main(){
     //No hay necesidad de hacer el tipo de variable explícito, aveces puede ser redundante
