@@ -33,4 +33,11 @@
         android:layout_height="wrap_content"
         android:text="IMC Calculator App"
         android:layout_marginHorizontal="5dp"/>
+
+    <Button
+        android:id="@+id/buttonToDoApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToDo App"
+        android:layout_marginHorizontal="5dp"/>
 </LinearLayout>
