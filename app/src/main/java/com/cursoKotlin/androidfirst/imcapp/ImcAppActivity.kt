@@ -9,7 +9,7 @@ import com.cursoKotlin.androidfirst.databinding.ActivityImcAppBinding
 class ImcAppActivity : AppCompatActivity() {
 
     private var isMaleSelected:Boolean = true
-
+    private var currentWeight = 60
     private lateinit var binding: ActivityImcAppBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +28,19 @@ class ImcAppActivity : AppCompatActivity() {
             var valueFormat = String.format("%.0f", value)
             binding.heightText.text = "$valueFormat cm"
         }
+        updateWeight()
+        binding.btnMinus.setOnClickListener {
+            currentWeight -=1
+            updateWeight()
+        }
+        binding.btnPlus.setOnClickListener {
+            currentWeight +=1
+            updateWeight()
+        }
+    }
+
+    private fun updateWeight() {
+        binding.textWeight.text = currentWeight.toString()
     }
 
     private fun setGenderColor(isMale:Boolean){
